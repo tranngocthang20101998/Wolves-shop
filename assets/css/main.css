@@ -102,3 +102,154 @@ body {
 /* Project CSS */
 
 
+.header_slider {
+    background-color: #0D5CB6;
+}
+
+.header_slider .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_slider_container{
+    position: relative;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.header_slider_container__btn {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 3px solid #6195CF;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.header_slider_container__btn:hover {
+    border: 3px solid #A5C2E4;
+}
+
+.header_slider_container__btn--prev {
+    margin-left: 4px;
+    border-top: none;
+    border-right: none;
+}
+
+.header_slider_container__btn--prev:hover {
+    border-top: none;
+    border-right: none;
+}
+
+.header_slider_container__btn--next {
+    border-bottom: none;
+    border-left: none;
+}
+
+.header_slider_container__btn--next:hover {
+    border-bottom: none;
+    border-left: none;
+}
+
+.header_slider_container__content {
+    display: inline-block;
+    margin-left: 16px;
+    text-decoration: none;
+    color: #B4CCE8;
+    animation: headerSliderIn 1s linear;
+}
+
+@keyframes headerSliderIn {
+    from {
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.header_slider_container__icon {
+    margin-right: 4px;
+}
+
+.header_slider_help {
+
+}
+
+.header_slider_help__content {
+    text-decoration: none;
+    color: #ADC8E6;
+}
+
+.header-main {
+    height: 60px;
+    background-color: #017FFF;
+}
+
+.header-main .row {
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.header-main_logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-main_logo__img {
+    width: 60px;
+    margin-right: 4px;
+}
+
+.header-main_logo__text {
+    width: 140px;
+}
+
+.header-main_search {
+
+}
+
+.header-main_search_form {
+    position: relative;
+}
+
+.header-main_search_form__input {
+    font-size: 1.6rem;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding-left: 16px;
+    padding-right: 70px;
+    width: calc( 450px - 70px - 16px);
+    height: 40px;
+}
+
+.header-main_search_form__submit {
+    height: 40px;
+    width: 50px;
+    border-radius: 4px;
+    background-color: #204395;
+    color: #fff;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Monile */
+@media screen and (max-width: 739px) {
+    .header_slider {
+        display: none;
+    }
+}
+/* Tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+    .header_slider {
+        display: none;
+    }
+}
+
